@@ -4,7 +4,7 @@
   "name": "Clock Plus",
   "version": "1.0.0",
   "author": "Matt Wolfgang",
-  "description": "Built on Omarchy's Clock plugin and intended as a complete replacement for it. Adds timers, alarms, and a stopwatch to the calendar popup.",
+  "description": "This fork of the Omarchy Clock plugin adds timers, alarms, and a stopwatch to the calendar popup, with a live countdown in the bar. It is intended as a complete replacement for the built-in clock: enabling it takes the built-in's place in the bar and keeps your clock settings. Timers and alarms survive shell restarts, and a single service keeps them in sync across monitors.",
   "kinds": [
     "service",
     "bar-widget"
@@ -15,7 +15,7 @@
   },
   "barWidget": {
     "displayName": "Clock Plus",
-    "description": "Built on Omarchy's Clock plugin and intended as a complete replacement for it. Adds timers, alarms, and a stopwatch to the calendar popup.",
+    "description": "This fork of the Omarchy Clock plugin adds timers, alarms, and a stopwatch to the calendar popup, with a live countdown in the bar. It is intended as a complete replacement for the built-in clock: enabling it takes the built-in's place in the bar and keeps your clock settings. Timers and alarms survive shell restarts, and a single service keeps them in sync across monitors.",
     "category": "Time",
     "allowMultiple": false
   },
