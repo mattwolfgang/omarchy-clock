@@ -1,8 +1,32 @@
 # Clock Fork
 
-A fork of Omarchy's built-in Clock bar widget (`omarchy.clock`) that adds timers, alarms, and a stopwatch to the calendar popup.
+Built on Omarchy's own Clock plugin (`omarchy.clock`) and intended as a complete replacement for it. It keeps the bar clock and calendar, and adds timers, alarms, and a stopwatch to the popup.
 
 Forked from `shell/plugins/panels/clock` in [Omarchy](https://github.com/omacom/omarchy) 4.5.0rc2-1. MIT licensed; see `LICENSE`.
+
+![The popup's Timers tab, with a countdown in the bar beside the time](preview.png)
+
+## Requirements
+
+- The Omarchy shell (developed against 4.5.0rc2-1)
+- `paplay` for the alarm sound. Without it, notifications still appear but there is no sound.
+
+## Install
+
+```sh
+omarchy plugin add https://github.com/mattwolfgang/omarchy-clock --enable
+```
+
+Enabling it takes the built-in clock's place in the bar and keeps your clock settings. Enable only one of the two at a time.
+
+## Remove
+
+```sh
+omarchy plugin enable omarchy.clock
+omarchy plugin remove io.github.mattwolfgang.clock
+```
+
+The first command puts the built-in clock back. Your timers and alarms stay in `~/.local/state/omarchy/io.github.mattwolfgang.clock.json`; delete that file to clear them.
 
 ## Using it
 
@@ -26,7 +50,7 @@ Everything runs inside the Omarchy shell, so nothing rings while the machine is 
 
 ```sh
 node --test tests/   # logic in Time.js
-./install.sh         # copy into the shell and replace the built-in clock
+scripts/dev-sync.sh  # copy this checkout into the shell and replace the built-in clock
 omarchy-restart-shell   # needed to see QML edits: a plugin rescan can keep cached components
 omarchy plugin enable omarchy.clock   # go back to the built-in
 ```

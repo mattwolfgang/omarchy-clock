@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Copy the plugin into the Omarchy shell's plugin folder and enable it, which
-# replaces the built-in clock in the bar. Re-run after editing to update the
-# installed copy. Undo with: omarchy plugin enable omarchy.clock
+# Development helper: copy this checkout into the Omarchy shell's plugin folder
+# and enable it, replacing the built-in clock in the bar. Re-run after editing.
+# Normal installs use `omarchy plugin add` (see README).
 set -euo pipefail
 
-src="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+src="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 id="io.github.mattwolfgang.clock"
 dest="$HOME/.config/omarchy/plugins/$id"
 

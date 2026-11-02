@@ -4,7 +4,7 @@
   "name": "Clock Fork",
   "version": "1.0.0",
   "author": "Matt Wolfgang",
-  "description": "Date/time label with a calendar, timers, alarms, and a stopwatch",
+  "description": "Built on Omarchy's Clock plugin and intended as a complete replacement for it. Adds timers, alarms, and a stopwatch to the calendar popup.",
   "kinds": [
     "service",
     "bar-widget"
@@ -15,12 +15,17 @@
   },
   "barWidget": {
     "displayName": "Clock Fork",
-    "description": "Date/time label with a calendar, timers, alarms, and a stopwatch",
+    "description": "Built on Omarchy's Clock plugin and intended as a complete replacement for it. Adds timers, alarms, and a stopwatch to the calendar popup.",
     "category": "Time",
     "allowMultiple": false
   },
   "license": "MIT",
   "omarchy": {
     "clonedFrom": "omarchy.clock"
+  },
+  "homepage": "https://github.com/mattwolfgang/omarchy-clock",
+  "basedOn": {
+    "author": "Omarchy",
+    "url": "https://github.com/omacom/omarchy"
   }
 }
