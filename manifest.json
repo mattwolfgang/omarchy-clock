@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "io.github.mattwolfgang.clock",
-  "name": "Clock Fork",
+  "name": "Clock Plus",
   "version": "1.0.0",
   "author": "Matt Wolfgang",
   "description": "Built on Omarchy's Clock plugin and intended as a complete replacement for it. Adds timers, alarms, and a stopwatch to the calendar popup.",
@@ -14,7 +14,7 @@
     "barWidget": "BarWidget.qml"
   },
   "barWidget": {
-    "displayName": "Clock Fork",
+    "displayName": "Clock Plus",
     "description": "Built on Omarchy's Clock plugin and intended as a complete replacement for it. Adds timers, alarms, and a stopwatch to the calendar popup.",
     "category": "Time",
     "allowMultiple": false

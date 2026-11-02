@@ -1,4 +1,4 @@
-# Clock Fork
+# Clock Plus
 
 Built on Omarchy's own Clock plugin (`omarchy.clock`) and intended as a complete replacement for it. It keeps the bar clock and calendar, and adds timers, alarms, and a stopwatch to the popup.
 
