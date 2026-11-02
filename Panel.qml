@@ -4,6 +4,7 @@ import qs.Commons
 import qs.Commons as Commons
 import qs.Ui
 import "Model.js" as Model
+import "Time.js" as Time
 
 // The clock's calendar popup: a month grid with ISO week numbers, built to
 // sit beside the weather panel — same hero-over-detail composition, same
@@ -12,6 +13,9 @@ import "Model.js" as Model
 // The grid is a read-out rather than a picker: today is the only marked
 // day, and the only thing that moves is which month is on screen —
 // chevrons, the scroll wheel, and the arrow keys all step it.
+//
+// The other tabs (timers, alarms, stopwatch) keep to the space the calendar sets,
+// so changing tabs never resizes the popup. Their state lives in Service.qml.
 //
 // BarWidget.qml owns the bar label and hands this panel the button to
 // anchor against.
@@ -30,6 +34,88 @@ Panel {
   // slot up the same way.
   property var hostWidget: null
   readonly property var barIdentity: hostWidget || root
+
+  // ---- Tabs. Remembered while the shell runs, so reopening the panel returns
+  //      to the running timer rather than making you walk back to it. Without
+  //      the service (a bar that hands out no services) only the calendar shows.
+  Commons.Translations { id: clockStrings; directory: Qt.resolvedUrl("i18n") }
+
+  readonly property var service: hostWidget ? hostWidget.clockService : null
+  property string activeTab: "calendar"
+  property double tickNow: Date.now()
+  readonly property var ringing: service ? service.ringing : []
+  readonly property bool use12h: /a?p/i.test(String(setting("format", "dddd HH:mm")).replace(/'[^']*'?/g, ""))
+
+  readonly property var tabOptions: {
+    var calendar = { value: "calendar", label: clockStrings.t("tab.calendar"), icon: Time.ICONS.calendar }
+    if (!service) return [calendar]
+
+    function counted(key, count) { return clockStrings.t(key) + (count > 0 ? " " + Commons.I18n.formatNumber(count) : "") }
+    var runningTimers = service.timers.filter(function(timer) { return timer.state === "running" }).length
+    var activeAlarms = service.alarms.filter(function(alarm) { return alarm.enabled }).length
+    return [
+      calendar,
+      { value: "timers", label: counted("tab.timers", runningTimers), icon: Time.ICONS.timer },
+      { value: "alarms", label: counted("tab.alarms", activeAlarms), icon: Time.ICONS.alarm },
+      { value: "stopwatch", label: clockStrings.t("tab.stopwatch"), icon: Time.ICONS.stopwatch }
+    ]
+  }
+
+  function selectTab(tab) {
+    if (tabOptions.some(function(option) { return option.value === tab })) root.activeTab = tab
+  }
+
+  function stepTab(delta) {
+    var values = tabOptions.map(function(option) { return option.value })
+    var next = values.indexOf(root.activeTab) + delta
+    if (next >= 0 && next < values.length) root.activeTab = values[next]
+  }
+
+  function ringHeadline() {
+    if (!service || root.ringing.length === 0) return ""
+    return root.ringing.map(function(event) { return service.headlineFor(event, false) }).join(clockStrings.t("list.separator"))
+  }
+
+  function returnFocus() {
+    if (panel.loadedContent) panel.loadedContent.forceActiveFocus()
+  }
+
+  // Keys that mean something different away from the calendar.
+  function handleTabKey(t) {
+    if (t >= "1" && t <= "4") {
+      var option = tabOptions[Number(t) - 1]
+      if (option) root.activeTab = option.value
+      return true
+    }
+    if (root.activeTab === "timers" || root.activeTab === "alarms") {
+      if (t !== "n" && t !== "N") return false
+      if (panel.loadedContent) panel.loadedContent.focusEntry(root.activeTab)
+      return true
+    }
+    if (root.activeTab === "stopwatch") {
+      if (t === "a" || t === "A") service.lapStopwatch()
+      else if (t === "r" || t === "R") service.resetStopwatch()
+      else return false
+      return true
+    }
+    return false
+  }
+
+  function activate() {
+    if (root.ringing.length > 0) service.dismiss()
+    else if (root.activeTab === "calendar") root.goToToday()
+    else if (root.activeTab === "stopwatch") service.toggleStopwatch()
+  }
+
+  // Fast enough for the stopwatch's tenths, and only while a tab that shows
+  // moving time is on screen.
+  Timer {
+    interval: 100
+    repeat: true
+    running: root.opened && root.activeTab !== "calendar"
+    triggeredOnStart: true
+    onTriggered: root.tickNow = Date.now()
+  }
 
   // ---- Today. SystemClock keeps this honest across midnight so the
   //      highlight rolls over without the panel being reopened.
@@ -110,6 +196,7 @@ Panel {
     // Dismissing the panel mid-edit would otherwise leave the inputs up,
     // waiting behind a closed popup for the next time it opens.
     if (root.editingLife) root.cancelEditingLife()
+    root.returnFocus()
     root.controller.hide()
   }
 
@@ -268,17 +355,28 @@ Panel {
       id: keyCatcher
       property alias bornField: bornField
       property alias expectancyField: expectancyField
-      implicitHeight: calendarColumn.implicitHeight
+      implicitHeight: header.height + Style.space(12) + calendarColumn.implicitHeight
       anchors.fill: parent
-      blocked: root.editingLife
+      blocked: root.editingLife || timersView.editing || alarmsView.editing
+
+      function focusEntry(tab) {
+        if (tab === "timers") timersView.focusEntry()
+        else alarmsView.focusEntry()
+      }
+
       onMoveRequested: function(dx, dy) {
+        if (root.activeTab !== "calendar") {
+          if (dx !== 0) root.stepTab(dx)
+          return
+        }
         if (dx !== 0) root.moveMonth(dx)
         if (dy !== 0) root.moveYear(dy)
       }
-      onActivateRequested: root.goToToday()
+      onActivateRequested: root.activate()
       onCloseRequested: root.close()
       onTabRequested: function(direction) { root.switchPanel(direction) }
       onTextKey: function(t) {
+        if (root.handleTabKey(t) || root.activeTab !== "calendar") return
         if (t === "[") root.moveMonth(-1)
         else if (t === "]") root.moveMonth(1)
         else if (t === "{") root.moveYear(-1)
@@ -287,9 +385,132 @@ Panel {
         else if (t === "w" || t === "W") root.toggleWeekStart()
       }
 
+      // ---- The tab strip, or while something rings, what is ringing. Both
+      //      take the same slot, so the panel does not move under the pointer.
+      Item {
+        id: header
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.right: parent.right
+        height: tabStrip.implicitHeight
+
+        ButtonGroup {
+          id: tabStrip
+          anchors.horizontalCenter: parent.horizontalCenter
+          // Hidden by opacity: a Row with visible false measures as zero height.
+          opacity: root.ringing.length === 0 ? 1 : 0
+          enabled: root.ringing.length === 0
+          options: root.tabOptions
+          value: root.activeTab
+          focusable: false
+          spacing: Style.space(6)
+          foreground: root.contentForeground
+          fontFamily: root.contentFontFamily
+          fontSize: Style.font.bodySmall
+          onChanged: function(value) { root.selectTab(value) }
+        }
+
+        Row {
+          visible: root.ringing.length > 0
+          anchors.fill: parent
+          spacing: Style.space(8)
+
+          Text {
+            anchors.verticalCenter: parent.verticalCenter
+            width: parent.width - snoozeButton.width - dismissButton.width - parent.spacing * 2
+            text: Time.ICONS.ringing + "  " + root.ringHeadline()
+            textFormat: Text.PlainText
+            elide: Text.ElideRight
+            color: root.contentForeground
+            font.family: root.contentFontFamily
+            font.pixelSize: Style.font.body
+            font.bold: true
+          }
+
+          Button {
+            id: snoozeButton
+            anchors.verticalCenter: parent.verticalCenter
+            iconText: Time.ICONS.snooze
+            text: clockStrings.t("ring.snooze").arg(Commons.I18n.formatNumber(5))
+            bordered: true
+            foreground: root.contentForeground
+            fontFamily: root.contentFontFamily
+            fontSize: Style.font.bodySmall
+            onClicked: root.service.snooze()
+          }
+
+          Button {
+            id: dismissButton
+            anchors.verticalCenter: parent.verticalCenter
+            text: clockStrings.t("ring.dismiss")
+            bordered: true
+            selected: true
+            foreground: root.contentForeground
+            fontFamily: root.contentFontFamily
+            fontSize: Style.font.bodySmall
+            onClicked: root.service.dismiss()
+          }
+        }
+      }
+
+      Item {
+        id: tabArea
+        anchors.top: header.bottom
+        anchors.topMargin: Style.space(12)
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        visible: root.activeTab !== "calendar"
+        readonly property real innerWidth: Math.min(width, root.weekColumnWidth + root.gutterWidth + root.cellWidth * 7 + root.cellSpacing * 8)
+
+        TimersView {
+          id: timersView
+          anchors.fill: parent
+          visible: root.activeTab === "timers"
+          service: root.service
+          now: root.tickNow
+          foreground: root.contentForeground
+          fontFamily: root.contentFontFamily
+          innerWidth: tabArea.innerWidth
+          onFinished: root.returnFocus()
+        }
+
+        AlarmsView {
+          id: alarmsView
+          anchors.fill: parent
+          visible: root.activeTab === "alarms"
+          service: root.service
+          labelLocale: root.labelLocale
+          weekdays: root.weekdays
+          use12h: root.use12h
+          foreground: root.contentForeground
+          fontFamily: root.contentFontFamily
+          innerWidth: tabArea.innerWidth
+          onFinished: root.returnFocus()
+        }
+
+        StopwatchView {
+          anchors.fill: parent
+          visible: root.activeTab === "stopwatch"
+          service: root.service
+          now: root.tickNow
+          foreground: root.contentForeground
+          fontFamily: root.contentFontFamily
+          innerWidth: tabArea.innerWidth
+        }
+      }
+
       Flickable {
         id: calendarScroll
-        anchors.fill: parent
+        anchors.top: header.bottom
+        anchors.topMargin: Style.space(12)
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        // Hidden by opacity: the calendar's height sizes the panel on every tab,
+        // and a hidden Column would measure as zero.
+        opacity: root.activeTab === "calendar" ? 1 : 0
+        enabled: root.activeTab === "calendar"
         contentWidth: calendarColumn.width
         contentHeight: calendarColumn.implicitHeight
         clip: true

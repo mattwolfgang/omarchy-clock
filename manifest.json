@@ -1,20 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "omarchy.clock",
-  "name": "Clock",
+  "id": "io.github.mattwolfgang.clock",
+  "name": "Clock Fork",
   "version": "1.0.0",
-  "author": "Omarchy",
-  "description": "Date/time label with a calendar popup",
+  "author": "Matt Wolfgang",
+  "description": "Date/time label with a calendar, timers, alarms, and a stopwatch",
   "kinds": [
+    "service",
     "bar-widget"
   ],
   "entryPoints": {
+    "service": "Service.qml",
     "barWidget": "BarWidget.qml"
   },
   "barWidget": {
-    "displayName": "Clock",
-    "description": "Date/time label with a calendar popup",
+    "displayName": "Clock Fork",
+    "description": "Date/time label with a calendar, timers, alarms, and a stopwatch",
     "category": "Time",
     "allowMultiple": false
+  },
+  "license": "MIT",
+  "omarchy": {
+    "clonedFrom": "omarchy.clock"
   }
 }

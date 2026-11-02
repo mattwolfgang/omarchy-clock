@@ -4,6 +4,7 @@ import Quickshell.Io
 import qs.Commons
 import qs.Ui
 import "Model.js" as Model
+import "Time.js" as Time
 
 // Date/time label for the bar, and the host for the calendar popup.
 //
@@ -33,7 +34,29 @@ BarWidget {
   // repaint a second is a price only the formats that print seconds pay.
   readonly property bool showsSeconds: Model.clockNeedsSeconds(activeFormat)
   readonly property string displayText: formatted(displayDate)
-  readonly property var verticalLines: displayText.split("\n")
+
+  // The one service instance behind every monitor's copy of this widget. Looked
+  // up again on a timer because services load asynchronously and are replaced
+  // when plugins hot-reload.
+  property var clockService: null
+
+  function bindService() {
+    var host = root.bar && root.bar.shell ? root.bar.shell : null
+    var found = host && typeof host.serviceFor === "function"
+      ? host.serviceFor("io.github.mattwolfgang.clock") : null
+    if (found !== root.clockService) root.clockService = found
+  }
+
+  readonly property bool isRinging: clockService ? clockService.ringing.length > 0 : false
+  readonly property var activeStatus: clockService ? clockService.barStatus : null
+  readonly property string statusText: root.isRinging ? Time.ICONS.ringing
+    : (root.activeStatus ? root.activeStatus.icon + " " + Time.localizeNumber(root.activeStatus.text, I18n.zeroDigit, I18n.decimal) : "")
+  readonly property var verticalLines: {
+    var lines = displayText.split("\n")
+    if (root.isRinging) lines.push(Time.ICONS.ringing)
+    else if (root.activeStatus) lines.push(root.activeStatus.icon)
+    return lines
+  }
 
   function refresh() {
     displayDate = new Date()
@@ -118,13 +141,21 @@ BarWidget {
   implicitWidth: button.implicitWidth
   implicitHeight: button.implicitHeight
 
-  onBarChanged: injectPanel()
+  onBarChanged: { injectPanel(); bindService() }
   onSettingsChanged: injectPanel()
 
   SystemClock {
     id: clock
     precision: root.showsSeconds ? SystemClock.Seconds : SystemClock.Minutes
     onDateChanged: root.displayDate = date
+  }
+
+  Timer {
+    interval: 2000
+    repeat: true
+    running: true
+    triggeredOnStart: true
+    onTriggered: root.bindService()
   }
 
   Loader {
@@ -155,7 +186,7 @@ BarWidget {
     id: button
     anchors.fill: parent
     bar: root.bar
-    text: root.vertical ? "" : root.displayText
+    text: root.vertical ? "" : root.displayText + (root.statusText ? "   " + root.statusText : "")
     labelVisible: !root.vertical
     hasVisualContent: root.vertical ? root.verticalLines.length > 0 : text !== ""
     fixedHeight: root.vertical ? root.verticalLines.length * Style.bar.iconSlot : -1
