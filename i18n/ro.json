@@ -3,6 +3,7 @@
   "tab.timers": "Temporizatoare",
   "tab.alarms": "Alarme",
   "tab.stopwatch": "Cronometru",
+  "tab.counted": "%1 %2",
   "field.name": "Nume (opțional)",
   "action.pause": "Pauză",
   "action.resume": "Reia",
@@ -35,5 +36,18 @@
   "missed.timer": "Temporizator ratat",
   "missed.timer.labeled": "Temporizator ratat: %1",
   "missed.alarm": "Alarmă ratată",
-  "missed.alarm.labeled": "Alarmă ratată: %1"
+  "missed.alarm.labeled": "Alarmă ratată: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Înapoi la azi",
+  "clock.born": "NĂSCUT",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "VIAȚĂ",
+  "clock.liveTo": "TRĂIEȘTE PÂNĂ LA",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Luna următoare",
+  "clock.previousMonth": "Luna anterioară",
+  "clock.startWeeksOn": "Săptămânile încep %1",
+  "clock.toggleFormat": "Clic dreapta pentru a schimba formatul",
+  "clock.weekShort": "S",
+  "clock.year": "an"
 }

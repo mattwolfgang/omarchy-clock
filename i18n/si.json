@@ -3,6 +3,7 @@
   "tab.timers": "ටයිමර",
   "tab.alarms": "එලාම්",
   "tab.stopwatch": "විරාම ඔරලෝසුව",
+  "tab.counted": "%1 %2",
   "field.name": "නම (විකල්ප)",
   "action.pause": "විරාමය",
   "action.resume": "නැවත ආරම්භ",
@@ -35,5 +36,18 @@
   "missed.timer": "මග හැරුණු ටයිමරය",
   "missed.timer.labeled": "මග හැරුණු ටයිමරය: %1",
   "missed.alarm": "මග හැරුණු එලාමය",
-  "missed.alarm.labeled": "මග හැරුණු එලාමය: %1"
+  "missed.alarm.labeled": "මග හැරුණු එලාමය: %1",
+  "percent": "%1%",
+  "clock.backToToday": "අද දිනට ආපසු",
+  "clock.born": "උපත",
+  "clock.dayMonthFormat": "MMMM d",
+  "clock.life": "ජීවිතය",
+  "clock.liveTo": "ජීවත් වන්නේ",
+  "clock.monthYear": "%2 %1",
+  "clock.nextMonth": "ඊළඟ මාසය",
+  "clock.previousMonth": "පෙර මාසය",
+  "clock.startWeeksOn": "සති අරඹන්නේ %1",
+  "clock.toggleFormat": "ආකෘතිය මාරු කිරීමට දකුණු-ක්ලික් කරන්න",
+  "clock.weekShort": "ස",
+  "clock.year": "වසර"
 }

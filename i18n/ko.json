@@ -3,6 +3,7 @@
   "tab.timers": "타이머",
   "tab.alarms": "알람",
   "tab.stopwatch": "스톱워치",
+  "tab.counted": "%1 %2",
   "field.name": "이름(선택 사항)",
   "action.pause": "일시정지",
   "action.resume": "계속",
@@ -35,5 +36,18 @@
   "missed.timer": "놓친 타이머",
   "missed.timer.labeled": "놓친 타이머: %1",
   "missed.alarm": "놓친 알람",
-  "missed.alarm.labeled": "놓친 알람: %1"
+  "missed.alarm.labeled": "놓친 알람: %1",
+  "percent": "%1%",
+  "clock.backToToday": "오늘로 돌아가기",
+  "clock.born": "출생",
+  "clock.dayMonthFormat": "M월 d일",
+  "clock.life": "인생",
+  "clock.liveTo": "수명",
+  "clock.monthYear": "%2년 %1",
+  "clock.nextMonth": "다음 달",
+  "clock.previousMonth": "이전 달",
+  "clock.startWeeksOn": "주를 %1부터 시작",
+  "clock.toggleFormat": "오른쪽 클릭하여 형식 전환",
+  "clock.weekShort": "주",
+  "clock.year": "년"
 }

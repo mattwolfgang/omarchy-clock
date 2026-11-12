@@ -3,6 +3,7 @@
   "tab.timers": "Vipima muda",
   "tab.alarms": "Kengele",
   "tab.stopwatch": "Saa ya kusimamisha",
+  "tab.counted": "%1 %2",
   "field.name": "Jina (si lazima)",
   "action.pause": "Sitisha",
   "action.resume": "Endelea",
@@ -35,5 +36,18 @@
   "missed.timer": "Kipima muda kilichokosekana",
   "missed.timer.labeled": "Kipima muda kilichokosekana: %1",
   "missed.alarm": "Kengele iliyokosekana",
-  "missed.alarm.labeled": "Kengele iliyokosekana: %1"
+  "missed.alarm.labeled": "Kengele iliyokosekana: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Rudi kwenye leo",
+  "clock.born": "KUZALIWA",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "MAISHA",
+  "clock.liveTo": "ISHI HADI",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Mwezi ujao",
+  "clock.previousMonth": "Mwezi uliopita",
+  "clock.startWeeksOn": "Anzisha wiki siku ya %1",
+  "clock.toggleFormat": "Bofya kulia ili kubadilisha muundo",
+  "clock.weekShort": "W",
+  "clock.year": "mwaka"
 }

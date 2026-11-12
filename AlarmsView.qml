@@ -11,7 +11,7 @@ Item {
 
   property var service: null
   Commons.Translations { id: strings; directory: Qt.resolvedUrl("i18n") }
-  property var labelLocale: Qt.locale()
+  property var labelLocale: Qt.locale(Commons.I18n.formatLocale)
   property var weekdays: [1, 2, 3, 4, 5, 6, 0]
   property bool use12h: false
   property color foreground: Commons.Color.foreground

@@ -3,6 +3,7 @@
   "tab.timers": "タイマー",
   "tab.alarms": "アラーム",
   "tab.stopwatch": "ストップウォッチ",
+  "tab.counted": "%1 %2",
   "field.name": "名前（任意）",
   "action.pause": "一時停止",
   "action.resume": "再開",
@@ -35,5 +36,18 @@
   "missed.timer": "逃したタイマー",
   "missed.timer.labeled": "逃したタイマー：%1",
   "missed.alarm": "逃したアラーム",
-  "missed.alarm.labeled": "逃したアラーム：%1"
+  "missed.alarm.labeled": "逃したアラーム：%1",
+  "percent": "%1%",
+  "clock.backToToday": "今日に戻る",
+  "clock.born": "誕生日",
+  "clock.dayMonthFormat": "M月d日",
+  "clock.life": "人生",
+  "clock.liveTo": "目標寿命",
+  "clock.monthYear": "%2年%1",
+  "clock.nextMonth": "次の月",
+  "clock.previousMonth": "前の月",
+  "clock.startWeeksOn": "週の開始は %1",
+  "clock.toggleFormat": "右クリックで表示形式を切り替え",
+  "clock.weekShort": "週",
+  "clock.year": "年"
 }

@@ -3,6 +3,7 @@
   "tab.timers": "Zamanlayıcılar",
   "tab.alarms": "Alarmlar",
   "tab.stopwatch": "Kronometre",
+  "tab.counted": "%1 %2",
   "field.name": "Ad (isteğe bağlı)",
   "action.pause": "Duraklat",
   "action.resume": "Devam et",
@@ -35,5 +36,18 @@
   "missed.timer": "Kaçırılan zamanlayıcı",
   "missed.timer.labeled": "Kaçırılan zamanlayıcı: %1",
   "missed.alarm": "Kaçırılan alarm",
-  "missed.alarm.labeled": "Kaçırılan alarm: %1"
+  "missed.alarm.labeled": "Kaçırılan alarm: %1",
+  "percent": "%%1",
+  "clock.backToToday": "Bugüne dön",
+  "clock.born": "DOĞUM",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "YAŞAM",
+  "clock.liveTo": "YAŞAMA SÜRESİ",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Sonraki ay",
+  "clock.previousMonth": "Önceki ay",
+  "clock.startWeeksOn": "Haftaları %1 günü başlat",
+  "clock.toggleFormat": "Biçimi değiştirmek için sağ tıklayın",
+  "clock.weekShort": "H",
+  "clock.year": "yıl"
 }

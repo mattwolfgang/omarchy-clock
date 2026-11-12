@@ -3,6 +3,7 @@
   "tab.timers": "Časovniki",
   "tab.alarms": "Alarmi",
   "tab.stopwatch": "Štoparica",
+  "tab.counted": "%1 %2",
   "field.name": "Ime (neobvezno)",
   "action.pause": "Premor",
   "action.resume": "Nadaljuj",
@@ -35,5 +36,18 @@
   "missed.timer": "Zamujen časovnik",
   "missed.timer.labeled": "Zamujen časovnik: %1",
   "missed.alarm": "Zamujen alarm",
-  "missed.alarm.labeled": "Zamujen alarm: %1"
+  "missed.alarm.labeled": "Zamujen alarm: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Nazaj na danes",
+  "clock.born": "ROJEN",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "ŽIVLJENJE",
+  "clock.liveTo": "ŽIVI DO",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Naslednji mesec",
+  "clock.previousMonth": "Prejšnji mesec",
+  "clock.startWeeksOn": "Tedni se začnejo %1",
+  "clock.toggleFormat": "Desni klik za preklop oblike",
+  "clock.weekShort": "T",
+  "clock.year": "let"
 }

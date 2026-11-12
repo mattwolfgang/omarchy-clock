@@ -3,6 +3,7 @@
   "tab.timers": "Timere",
   "tab.alarms": "Alarmer",
   "tab.stopwatch": "Stopur",
+  "tab.counted": "%1 %2",
   "field.name": "Navn (valgfrit)",
   "action.pause": "Pause",
   "action.resume": "Genoptag",
@@ -35,5 +36,18 @@
   "missed.timer": "Mistet timer",
   "missed.timer.labeled": "Mistet timer: %1",
   "missed.alarm": "Mistet alarm",
-  "missed.alarm.labeled": "Mistet alarm: %1"
+  "missed.alarm.labeled": "Mistet alarm: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Tilbage til i dag",
+  "clock.born": "FØDT",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "LIV",
+  "clock.liveTo": "LEV TIL",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Næste måned",
+  "clock.previousMonth": "Forrige måned",
+  "clock.startWeeksOn": "Start uger på %1",
+  "clock.toggleFormat": "Højreklik for at skifte format",
+  "clock.weekShort": "U",
+  "clock.year": "år"
 }

@@ -3,6 +3,7 @@
   "tab.timers": "Temporitzadors",
   "tab.alarms": "Alarmes",
   "tab.stopwatch": "Cronòmetre",
+  "tab.counted": "%1 %2",
   "field.name": "Nom (opcional)",
   "action.pause": "Pausa",
   "action.resume": "Reprèn",
@@ -35,5 +36,18 @@
   "missed.timer": "Temporitzador perdut",
   "missed.timer.labeled": "Temporitzador perdut: %1",
   "missed.alarm": "Alarma perduda",
-  "missed.alarm.labeled": "Alarma perduda: %1"
+  "missed.alarm.labeled": "Alarma perduda: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Torna a avui",
+  "clock.born": "NAIXEMENT",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "VIDA",
+  "clock.liveTo": "VIU FINS A",
+  "clock.monthYear": "%1 de %2",
+  "clock.nextMonth": "Mes següent",
+  "clock.previousMonth": "Mes anterior",
+  "clock.startWeeksOn": "Comença les setmanes el %1",
+  "clock.toggleFormat": "Feu clic dret per canviar el format",
+  "clock.weekShort": "S",
+  "clock.year": "any"
 }

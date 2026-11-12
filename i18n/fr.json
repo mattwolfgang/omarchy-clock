@@ -3,6 +3,7 @@
   "tab.timers": "Minuteurs",
   "tab.alarms": "Alarmes",
   "tab.stopwatch": "Chronomètre",
+  "tab.counted": "%1 %2",
   "field.name": "Nom (facultatif)",
   "action.pause": "Pause",
   "action.resume": "Reprendre",
@@ -35,5 +36,18 @@
   "missed.timer": "Minuteur manqué",
   "missed.timer.labeled": "Minuteur manqué : %1",
   "missed.alarm": "Alarme manquée",
-  "missed.alarm.labeled": "Alarme manquée : %1"
+  "missed.alarm.labeled": "Alarme manquée : %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Retour à aujourd'hui",
+  "clock.born": "NAISSANCE",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "VIE",
+  "clock.liveTo": "JUSQU'À",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Mois suivant",
+  "clock.previousMonth": "Mois précédent",
+  "clock.startWeeksOn": "Semaines commençant le %1",
+  "clock.toggleFormat": "Clic droit pour changer de format",
+  "clock.weekShort": "S",
+  "clock.year": "an"
 }

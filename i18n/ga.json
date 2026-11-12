@@ -3,6 +3,7 @@
   "tab.timers": "Amadóirí",
   "tab.alarms": "Aláraim",
   "tab.stopwatch": "Stopuaireadóir",
+  "tab.counted": "%1 %2",
   "field.name": "Ainm (roghnach)",
   "action.pause": "Sos",
   "action.resume": "Atosaigh",
@@ -35,5 +36,18 @@
   "missed.timer": "Amadóir caillte",
   "missed.timer.labeled": "Amadóir caillte: %1",
   "missed.alarm": "Aláram caillte",
-  "missed.alarm.labeled": "Aláram caillte: %1"
+  "missed.alarm.labeled": "Aláram caillte: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Ar ais go dtí inniu",
+  "clock.born": "RUGADH",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "SAOL",
+  "clock.liveTo": "BEO GO",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "An chéad mhí eile",
+  "clock.previousMonth": "An mhí roimhe",
+  "clock.startWeeksOn": "Tosaigh seachtainí ar %1",
+  "clock.toggleFormat": "Deaschliceáil chun an fhormáid a athrú",
+  "clock.weekShort": "S",
+  "clock.year": "bliain"
 }

@@ -3,6 +3,7 @@
   "tab.timers": "计时器",
   "tab.alarms": "闹钟",
   "tab.stopwatch": "秒表",
+  "tab.counted": "%1 %2",
   "field.name": "名称（可选）",
   "action.pause": "暂停",
   "action.resume": "继续",
@@ -35,5 +36,18 @@
   "missed.timer": "错过的计时器",
   "missed.timer.labeled": "错过的计时器：%1",
   "missed.alarm": "错过的闹钟",
-  "missed.alarm.labeled": "错过的闹钟：%1"
+  "missed.alarm.labeled": "错过的闹钟：%1",
+  "percent": "%1%",
+  "clock.backToToday": "返回今天",
+  "clock.born": "出生",
+  "clock.dayMonthFormat": "M月d日",
+  "clock.life": "人生",
+  "clock.liveTo": "活到",
+  "clock.monthYear": "%2年%1",
+  "clock.nextMonth": "下个月",
+  "clock.previousMonth": "上个月",
+  "clock.startWeeksOn": "每周从 %1 开始",
+  "clock.toggleFormat": "右键单击切换格式",
+  "clock.weekShort": "周",
+  "clock.year": "年"
 }

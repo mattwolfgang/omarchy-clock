@@ -3,6 +3,7 @@
   "tab.timers": "Laikmačiai",
   "tab.alarms": "Žadintuvai",
   "tab.stopwatch": "Chronometras",
+  "tab.counted": "%1 %2",
   "field.name": "Pavadinimas (neprivaloma)",
   "action.pause": "Pristabdyti",
   "action.resume": "Tęsti",
@@ -35,5 +36,18 @@
   "missed.timer": "Praleistas laikmatis",
   "missed.timer.labeled": "Praleistas laikmatis: %1",
   "missed.alarm": "Praleistas žadintuvas",
-  "missed.alarm.labeled": "Praleistas žadintuvas: %1"
+  "missed.alarm.labeled": "Praleistas žadintuvas: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Grįžti į šiandien",
+  "clock.born": "GIMĘS",
+  "clock.dayMonthFormat": "MMMM d 'd'.",
+  "clock.life": "GYVENIMAS",
+  "clock.liveTo": "GYVENTI IKI",
+  "clock.monthYear": "%2 m. %1",
+  "clock.nextMonth": "Kitas mėnuo",
+  "clock.previousMonth": "Ankstesnis mėnuo",
+  "clock.startWeeksOn": "Savaites pradėti nuo %1",
+  "clock.toggleFormat": "Spustelėkite dešiniuoju mygtuku, kad perjungtumėte formatą",
+  "clock.weekShort": "S",
+  "clock.year": "metai"
 }

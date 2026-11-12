@@ -3,6 +3,7 @@
   "tab.timers": "টাইমার",
   "tab.alarms": "অ্যালার্ম",
   "tab.stopwatch": "স্টপওয়াচ",
+  "tab.counted": "%1 %2",
   "field.name": "নাম (ঐচ্ছিক)",
   "action.pause": "বিরতি",
   "action.resume": "আবার শুরু",
@@ -35,5 +36,18 @@
   "missed.timer": "মিস করা টাইমার",
   "missed.timer.labeled": "মিস করা টাইমার: %1",
   "missed.alarm": "মিস করা অ্যালার্ম",
-  "missed.alarm.labeled": "মিস করা অ্যালার্ম: %1"
+  "missed.alarm.labeled": "মিস করা অ্যালার্ম: %1",
+  "percent": "%1%",
+  "clock.backToToday": "আজে ফিরে যান",
+  "clock.born": "জন্ম",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "জীবন",
+  "clock.liveTo": "বাঁচতে চাই",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "পরের মাস",
+  "clock.previousMonth": "আগের মাস",
+  "clock.startWeeksOn": "সপ্তাহ শুরু হোক %1-এ",
+  "clock.toggleFormat": "ফরম্যাট বদলাতে ডান-ক্লিক করুন",
+  "clock.weekShort": "স",
+  "clock.year": "বছর"
 }

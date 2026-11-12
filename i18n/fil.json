@@ -3,6 +3,7 @@
   "tab.timers": "Mga Timer",
   "tab.alarms": "Mga Alarm",
   "tab.stopwatch": "Stopwatch",
+  "tab.counted": "%1 %2",
   "field.name": "Pangalan (opsyonal)",
   "action.pause": "I-pause",
   "action.resume": "Ituloy",
@@ -35,5 +36,18 @@
   "missed.timer": "Hindi naabutang timer",
   "missed.timer.labeled": "Hindi naabutang timer: %1",
   "missed.alarm": "Hindi naabutang alarm",
-  "missed.alarm.labeled": "Hindi naabutang alarm: %1"
+  "missed.alarm.labeled": "Hindi naabutang alarm: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Bumalik sa ngayon",
+  "clock.born": "IPINANGANAK",
+  "clock.dayMonthFormat": "MMMM d",
+  "clock.life": "BUHAY",
+  "clock.liveTo": "MABUHAY HANGGANG",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Susunod na buwan",
+  "clock.previousMonth": "Nakaraang buwan",
+  "clock.startWeeksOn": "Simulan ang mga linggo sa %1",
+  "clock.toggleFormat": "I-right-click para palitan ang format",
+  "clock.weekShort": "L",
+  "clock.year": "taon"
 }

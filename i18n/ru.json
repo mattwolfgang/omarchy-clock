@@ -3,6 +3,7 @@
   "tab.timers": "Таймеры",
   "tab.alarms": "Будильники",
   "tab.stopwatch": "Секундомер",
+  "tab.counted": "%1 %2",
   "field.name": "Название (необязательно)",
   "action.pause": "Пауза",
   "action.resume": "Продолжить",
@@ -35,5 +36,18 @@
   "missed.timer": "Пропущенный таймер",
   "missed.timer.labeled": "Пропущенный таймер: %1",
   "missed.alarm": "Пропущенный будильник",
-  "missed.alarm.labeled": "Пропущенный будильник: %1"
+  "missed.alarm.labeled": "Пропущенный будильник: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "К сегодняшнему дню",
+  "clock.born": "РОЖДЕНИЕ",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "ЖИЗНЬ",
+  "clock.liveTo": "ДОЖИТЬ ДО",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Следующий месяц",
+  "clock.previousMonth": "Предыдущий месяц",
+  "clock.startWeeksOn": "Начать недели с %1",
+  "clock.toggleFormat": "Щёлкните правой кнопкой, чтобы сменить формат",
+  "clock.weekShort": "Н",
+  "clock.year": "год"
 }

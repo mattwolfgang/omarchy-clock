@@ -3,6 +3,7 @@
   "tab.timers": "Timer",
   "tab.alarms": "Wecker",
   "tab.stopwatch": "Stoppuhr",
+  "tab.counted": "%1 %2",
   "field.name": "Name (optional)",
   "action.pause": "Pausieren",
   "action.resume": "Fortsetzen",
@@ -35,5 +36,18 @@
   "missed.timer": "Verpasster Timer",
   "missed.timer.labeled": "Verpasster Timer: %1",
   "missed.alarm": "Verpasster Wecker",
-  "missed.alarm.labeled": "Verpasster Wecker: %1"
+  "missed.alarm.labeled": "Verpasster Wecker: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Zurück zu heute",
+  "clock.born": "GEBOREN",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "LEBEN",
+  "clock.liveTo": "LEBEN BIS",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Nächster Monat",
+  "clock.previousMonth": "Vorheriger Monat",
+  "clock.startWeeksOn": "Wochen beginnen am %1",
+  "clock.toggleFormat": "Rechtsklick zum Wechseln des Formats",
+  "clock.weekShort": "KW",
+  "clock.year": "Jahr"
 }

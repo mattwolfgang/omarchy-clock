@@ -3,6 +3,7 @@
   "tab.timers": "ٹائمرز",
   "tab.alarms": "الارم",
   "tab.stopwatch": "اسٹاپ واچ",
+  "tab.counted": "%1 %2",
   "field.name": "نام (اختیاری)",
   "action.pause": "روکیں",
   "action.resume": "جاری رکھیں",
@@ -35,5 +36,18 @@
   "missed.timer": "چھوٹا ہوا ٹائمر",
   "missed.timer.labeled": "چھوٹا ہوا ٹائمر: %1",
   "missed.alarm": "چھوٹا ہوا الارم",
-  "missed.alarm.labeled": "چھوٹا ہوا الارم: %1"
+  "missed.alarm.labeled": "چھوٹا ہوا الارم: %1",
+  "percent": "%1%",
+  "clock.backToToday": "آج پر واپس",
+  "clock.born": "پیدائش",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "زندگی",
+  "clock.liveTo": "زندگی تک",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "اگلا مہینہ",
+  "clock.previousMonth": "پچھلا مہینہ",
+  "clock.startWeeksOn": "ہفتے %1 سے شروع کریں",
+  "clock.toggleFormat": "فارمیٹ بدلنے کے لیے دائیں کلک کریں",
+  "clock.weekShort": "ہ",
+  "clock.year": "سال"
 }

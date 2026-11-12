@@ -3,6 +3,7 @@
   "tab.timers": "Taimerid",
   "tab.alarms": "Äratused",
   "tab.stopwatch": "Stopper",
+  "tab.counted": "%1 %2",
   "field.name": "Nimi (valikuline)",
   "action.pause": "Paus",
   "action.resume": "Jätka",
@@ -35,5 +36,18 @@
   "missed.timer": "Kasutamata taimer",
   "missed.timer.labeled": "Kasutamata taimer: %1",
   "missed.alarm": "Kasutamata äratus",
-  "missed.alarm.labeled": "Kasutamata äratus: %1"
+  "missed.alarm.labeled": "Kasutamata äratus: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Tagasi tänasesse",
+  "clock.born": "SÜNDINUD",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "ELU",
+  "clock.liveTo": "ELA KUNI",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Järgmine kuu",
+  "clock.previousMonth": "Eelmine kuu",
+  "clock.startWeeksOn": "Nädalate algus %1",
+  "clock.toggleFormat": "Vormingu vahetamiseks paremklõpsa",
+  "clock.weekShort": "N",
+  "clock.year": "aasta"
 }

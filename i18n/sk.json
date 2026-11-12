@@ -3,6 +3,7 @@
   "tab.timers": "Časovače",
   "tab.alarms": "Budíky",
   "tab.stopwatch": "Stopky",
+  "tab.counted": "%1 %2",
   "field.name": "Názov (voliteľný)",
   "action.pause": "Pozastaviť",
   "action.resume": "Pokračovať",
@@ -35,5 +36,18 @@
   "missed.timer": "Zmeškaný časovač",
   "missed.timer.labeled": "Zmeškaný časovač: %1",
   "missed.alarm": "Zmeškaný budík",
-  "missed.alarm.labeled": "Zmeškaný budík: %1"
+  "missed.alarm.labeled": "Zmeškaný budík: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Späť na dnes",
+  "clock.born": "NARODENIE",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "ŽIVOT",
+  "clock.liveTo": "DOŽIŤ SA",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Nasledujúci mesiac",
+  "clock.previousMonth": "Predchádzajúci mesiac",
+  "clock.startWeeksOn": "Týždne začínajú v %1",
+  "clock.toggleFormat": "Kliknutím pravým tlačidlom prepnete formát",
+  "clock.weekShort": "T",
+  "clock.year": "rok"
 }

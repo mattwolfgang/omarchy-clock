@@ -42,6 +42,22 @@ test("every key the QML asks for exists", () => {
   for (const key of used) assert.ok(key in en, key)
 })
 
+test("the QML reads only the plugin's own strings, never Omarchy's catalog", () => {
+  const root = path.join(__dirname, "..")
+  for (const file of fs.readdirSync(root).filter(f => f.endsWith(".qml"))) {
+    const source = fs.readFileSync(path.join(root, file), "utf8")
+    assert.doesNotMatch(source, /I18n\.tn?\(/, file)
+  }
+})
+
+test("percent keeps its sign, and counted tabs keep both parts", () => {
+  for (const code of codes) {
+    const catalog = load(code)
+    assert.match(catalog["percent"], /[%٪]/, code)
+    assert.equal(placeholders(catalog["tab.counted"]), "%1,%2", code)
+  }
+})
+
 test("every Omarchy language is covered, when Omarchy is installed", { skip: !fs.existsSync("/usr/share/omarchy/default/i18n/locales.json") }, () => {
   const registry = JSON.parse(fs.readFileSync("/usr/share/omarchy/default/i18n/locales.json", "utf8"))
   assert.deepEqual(codes.slice().sort(), Object.keys(registry).sort())

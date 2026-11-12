@@ -3,6 +3,7 @@
   "tab.timers": "Χρονόμετρα αντίστροφης",
   "tab.alarms": "Ξυπνητήρια",
   "tab.stopwatch": "Χρονόμετρο",
+  "tab.counted": "%1 %2",
   "field.name": "Όνομα (προαιρετικό)",
   "action.pause": "Παύση",
   "action.resume": "Συνέχιση",
@@ -35,5 +36,18 @@
   "missed.timer": "Χαμένο χρονόμετρο",
   "missed.timer.labeled": "Χαμένο χρονόμετρο: %1",
   "missed.alarm": "Χαμένο ξυπνητήρι",
-  "missed.alarm.labeled": "Χαμένο ξυπνητήρι: %1"
+  "missed.alarm.labeled": "Χαμένο ξυπνητήρι: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Πίσω στο σήμερα",
+  "clock.born": "ΓΕΝΝΗΣΗ",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "ΖΩΗ",
+  "clock.liveTo": "ΖΩΗ ΜΕΧΡΙ",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Επόμενος μήνας",
+  "clock.previousMonth": "Προηγούμενος μήνας",
+  "clock.startWeeksOn": "Έναρξη εβδομάδας: %1",
+  "clock.toggleFormat": "Δεξί κλικ για εναλλαγή μορφής",
+  "clock.weekShort": "Ε",
+  "clock.year": "έτος"
 }

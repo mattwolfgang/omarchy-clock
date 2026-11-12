@@ -3,6 +3,7 @@
   "tab.timers": "Taimeri",
   "tab.alarms": "Modinātāji",
   "tab.stopwatch": "Hronometrs",
+  "tab.counted": "%1 %2",
   "field.name": "Nosaukums (nav obligāts)",
   "action.pause": "Pauze",
   "action.resume": "Turpināt",
@@ -35,5 +36,18 @@
   "missed.timer": "Nokavēts taimeris",
   "missed.timer.labeled": "Nokavēts taimeris: %1",
   "missed.alarm": "Nokavēts modinātājs",
-  "missed.alarm.labeled": "Nokavēts modinātājs: %1"
+  "missed.alarm.labeled": "Nokavēts modinātājs: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Atpakaļ uz šodienu",
+  "clock.born": "DZIMIS",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "DZĪVE",
+  "clock.liveTo": "DZĪVOT LĪDZ",
+  "clock.monthYear": "%2. gada %1",
+  "clock.nextMonth": "Nākamais mēnesis",
+  "clock.previousMonth": "Iepriekšējais mēnesis",
+  "clock.startWeeksOn": "Sākt nedēļas ar %1",
+  "clock.toggleFormat": "Ar peles labo pogu pārslēdz formātu",
+  "clock.weekShort": "N",
+  "clock.year": "gads"
 }

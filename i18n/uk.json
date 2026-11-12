@@ -3,6 +3,7 @@
   "tab.timers": "Таймери",
   "tab.alarms": "Будильники",
   "tab.stopwatch": "Секундомір",
+  "tab.counted": "%1 %2",
   "field.name": "Назва (необов’язково)",
   "action.pause": "Пауза",
   "action.resume": "Продовжити",
@@ -35,5 +36,18 @@
   "missed.timer": "Пропущений таймер",
   "missed.timer.labeled": "Пропущений таймер: %1",
   "missed.alarm": "Пропущений будильник",
-  "missed.alarm.labeled": "Пропущений будильник: %1"
+  "missed.alarm.labeled": "Пропущений будильник: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Повернутися до сьогодні",
+  "clock.born": "НАРОДЖЕННЯ",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "ЖИТТЯ",
+  "clock.liveTo": "ЖИТИ ДО",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Наступний місяць",
+  "clock.previousMonth": "Попередній місяць",
+  "clock.startWeeksOn": "Починати тижні з %1",
+  "clock.toggleFormat": "Клацніть правою кнопкою, щоб змінити формат",
+  "clock.weekShort": "Т",
+  "clock.year": "рік"
 }

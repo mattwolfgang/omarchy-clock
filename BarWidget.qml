@@ -15,6 +15,8 @@ BarWidget {
   id: root
   moduleName: "omarchy.clock"
 
+  Translations { id: strings; directory: Qt.resolvedUrl("i18n") }
+
   property date displayDate: clock.date
 
   readonly property string configuredFormat: vertical
@@ -192,7 +194,7 @@ BarWidget {
     fixedHeight: root.vertical ? root.verticalLines.length * Style.bar.iconSlot : -1
     horizontalMargin: 8.75
     verticalPadding: 8.75
-    tooltipText: I18n.t("clock.toggleFormat")
+    tooltipText: strings.t("clock.toggleFormat")
     // The clock is text to read, not an icon to press, so a click never
     // shrinks it; the format it cycles to, or the panel it opens, is feedback.
     pressFeedbackButtons: Qt.NoButton

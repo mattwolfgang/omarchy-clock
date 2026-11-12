@@ -3,6 +3,7 @@
   "tab.timers": "Timer",
   "tab.alarms": "Alarm",
   "tab.stopwatch": "Stopwatch",
+  "tab.counted": "%1 %2",
   "field.name": "Nama (opsional)",
   "action.pause": "Jeda",
   "action.resume": "Lanjutkan",
@@ -35,5 +36,18 @@
   "missed.timer": "Timer terlewat",
   "missed.timer.labeled": "Timer terlewat: %1",
   "missed.alarm": "Alarm terlewat",
-  "missed.alarm.labeled": "Alarm terlewat: %1"
+  "missed.alarm.labeled": "Alarm terlewat: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Kembali ke hari ini",
+  "clock.born": "LAHIR",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "HIDUP",
+  "clock.liveTo": "HIDUP SAMPAI",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Bulan berikutnya",
+  "clock.previousMonth": "Bulan sebelumnya",
+  "clock.startWeeksOn": "Mulai minggu pada %1",
+  "clock.toggleFormat": "Klik kanan untuk mengganti format",
+  "clock.weekShort": "M",
+  "clock.year": "tahun"
 }

@@ -3,6 +3,7 @@
   "tab.timers": "المؤقتات",
   "tab.alarms": "المنبهات",
   "tab.stopwatch": "ساعة الإيقاف",
+  "tab.counted": "%1 %2",
   "field.name": "الاسم (اختياري)",
   "action.pause": "إيقاف مؤقت",
   "action.resume": "استئناف",
@@ -35,5 +36,18 @@
   "missed.timer": "مؤقت فائت",
   "missed.timer.labeled": "مؤقت فائت: %1",
   "missed.alarm": "منبه فائت",
-  "missed.alarm.labeled": "منبه فائت: %1"
+  "missed.alarm.labeled": "منبه فائت: %1",
+  "percent": "%1‎%‎",
+  "clock.backToToday": "العودة إلى اليوم",
+  "clock.born": "الولادة",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "الحياة",
+  "clock.liveTo": "العيش حتى",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "الشهر التالي",
+  "clock.previousMonth": "الشهر السابق",
+  "clock.startWeeksOn": "تبدأ الأسابيع يوم %1",
+  "clock.toggleFormat": "انقر بزر الماوس الأيمن لتبديل التنسيق",
+  "clock.weekShort": "أ",
+  "clock.year": "سنة"
 }

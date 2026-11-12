@@ -3,6 +3,7 @@
   "tab.timers": "Mjerači vremena",
   "tab.alarms": "Alarmi",
   "tab.stopwatch": "Štoperica",
+  "tab.counted": "%1 %2",
   "field.name": "Naziv (neobavezno)",
   "action.pause": "Pauziraj",
   "action.resume": "Nastavi",
@@ -35,5 +36,18 @@
   "missed.timer": "Propušten mjerač vremena",
   "missed.timer.labeled": "Propušten mjerač vremena: %1",
   "missed.alarm": "Propušten alarm",
-  "missed.alarm.labeled": "Propušten alarm: %1"
+  "missed.alarm.labeled": "Propušten alarm: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Natrag na danas",
+  "clock.born": "ROĐENJE",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "ŽIVOT",
+  "clock.liveTo": "ŽIVJETI DO",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Sljedeći mjesec",
+  "clock.previousMonth": "Prethodni mjesec",
+  "clock.startWeeksOn": "Započni tjedne u %1",
+  "clock.toggleFormat": "Desni klik za promjenu formata",
+  "clock.weekShort": "T",
+  "clock.year": "godina"
 }

@@ -50,7 +50,7 @@ Panel {
     var calendar = { value: "calendar", label: clockStrings.t("tab.calendar"), icon: Time.ICONS.calendar }
     if (!service) return [calendar]
 
-    function counted(key, count) { return clockStrings.t(key) + (count > 0 ? " " + Commons.I18n.formatNumber(count) : "") }
+    function counted(key, count) { return count > 0 ? clockStrings.t("tab.counted").arg(clockStrings.t(key)).arg(Commons.I18n.formatNumber(count)) : clockStrings.t(key) }
     var runningTimers = service.timers.filter(function(timer) { return timer.state === "running" }).length
     var activeAlarms = service.alarms.filter(function(alarm) { return alarm.enabled }).length
     return [
@@ -159,7 +159,7 @@ Panel {
   // Qt's MMMM is the genitive form ("октября"), right beside a day but not
   // in a month heading, so the title takes the standalone name ("октябрь")
   // and lets each language order it against the year.
-  readonly property string monthYearLabel: Commons.I18n.t("clock.monthYear")
+  readonly property string monthYearLabel: clockStrings.t("clock.monthYear")
     .arg(labelLocale.standaloneMonthName(viewMonth, Locale.LongFormat))
     .arg(viewDate.toLocaleDateString(labelLocale, "yyyy"))
   readonly property string nextWeekStartLabel: labelLocale.dayName(Model.toggledWeekStart(weekStart), Locale.LongFormat)
@@ -557,7 +557,7 @@ Panel {
                 id: heroDate
                 textFormat: Text.PlainText
                 anchors.verticalCenter: parent.verticalCenter
-                text: root.today.toLocaleDateString(root.labelLocale, Commons.I18n.t("clock.dayMonthFormat"))
+                text: root.today.toLocaleDateString(root.labelLocale, clockStrings.t("clock.dayMonthFormat"))
                 color: heroMouse.containsMouse
                   ? Style.hoverStateColor(root.contentForeground, Commons.Color.accent)
                   : root.contentForeground
@@ -580,7 +580,7 @@ Panel {
 
               PanelToolTip {
                 visible: heroMouse.containsMouse
-                text: Commons.I18n.t("clock.backToToday")
+                text: clockStrings.t("clock.backToToday")
                 fontFamily: root.contentFontFamily
               }
             }
@@ -613,7 +613,7 @@ Panel {
 
                 Text {
                   anchors.verticalCenter: parent.verticalCenter
-                  text: Commons.I18n.t("clock.born")
+                  text: clockStrings.t("clock.born")
                   textFormat: Text.PlainText
                   color: Qt.darker(root.contentForeground, 1.5)
                   font.family: root.contentFontFamily
@@ -625,7 +625,7 @@ Panel {
                   id: bornField
                   width: Style.space(70)
                   anchors.verticalCenter: parent.verticalCenter
-                  placeholderText: Commons.I18n.t("clock.year")
+                  placeholderText: clockStrings.t("clock.year")
                   foreground: root.contentForeground
                   font.family: root.contentFontFamily
                   inputMethodHints: Qt.ImhDigitsOnly
@@ -637,7 +637,7 @@ Panel {
                   anchors.verticalCenter: parent.verticalCenter
                   anchors.verticalCenterOffset: 0
                   leftPadding: Style.space(6)
-                  text: Commons.I18n.t("clock.liveTo")
+                  text: clockStrings.t("clock.liveTo")
                   textFormat: Text.PlainText
                   color: Qt.darker(root.contentForeground, 1.5)
                   font.family: root.contentFontFamily
@@ -677,7 +677,7 @@ Panel {
                 visible: !root.editingLife
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                text: Commons.I18n.formatNumber(root.yearDonePercent) + "%"
+                text: clockStrings.t("percent").arg(Commons.I18n.formatNumber(root.yearDonePercent))
                 color: root.contentForeground
                 font.family: root.contentFontFamily
                 font.pixelSize: Style.font.bodySmall
@@ -725,7 +725,7 @@ Panel {
                 id: lifeLabel
                 anchors.left: parent.left
                 anchors.verticalCenter: parent.verticalCenter
-                text: Commons.I18n.t("clock.life")
+                text: clockStrings.t("clock.life")
                 textFormat: Text.PlainText
                 color: Qt.darker(root.contentForeground, 1.5)
                 font.family: root.contentFontFamily
@@ -738,7 +738,7 @@ Panel {
                 textFormat: Text.PlainText
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                text: Commons.I18n.formatNumber(root.lifeDonePercent) + "%"
+                text: clockStrings.t("percent").arg(Commons.I18n.formatNumber(root.lifeDonePercent))
                 color: root.contentForeground
                 font.family: root.contentFontFamily
                 font.pixelSize: Style.font.bodySmall
@@ -826,7 +826,7 @@ Panel {
                   Text {
                     anchors.centerIn: parent
                     textFormat: Text.PlainText
-                    text: Commons.I18n.t("clock.weekShort")
+                    text: clockStrings.t("clock.weekShort")
                     color: weekStartMouse.containsMouse
                       ? Style.hoverStateColor(root.contentForeground, Commons.Color.accent)
                       : Qt.darker(root.contentForeground, 1.9)
@@ -846,7 +846,7 @@ Panel {
 
                   PanelToolTip {
                     visible: weekStartMouse.containsMouse
-                    text: Commons.I18n.t("clock.startWeeksOn").arg(root.nextWeekStartLabel)
+                    text: clockStrings.t("clock.startWeeksOn").arg(root.nextWeekStartLabel)
                     fontFamily: root.contentFontFamily
                   }
                 }
@@ -988,7 +988,7 @@ Panel {
                 anchors.verticalCenter: parent.verticalCenter
                 // Previous points back along the reading direction.
                 iconText: Commons.I18n.rightToLeft ? "󰅂" : "󰅁"
-                tooltipText: Commons.I18n.t("clock.previousMonth")
+                tooltipText: clockStrings.t("clock.previousMonth")
                 foreground: root.contentForeground
                 fontFamily: root.contentFontFamily
                 onClicked: root.moveMonth(-1)
@@ -999,7 +999,7 @@ Panel {
                 anchors.rightMargin: -Style.space(8)
                 anchors.verticalCenter: parent.verticalCenter
                 iconText: Commons.I18n.rightToLeft ? "󰅁" : "󰅂"
-                tooltipText: Commons.I18n.t("clock.nextMonth")
+                tooltipText: clockStrings.t("clock.nextMonth")
                 foreground: root.contentForeground
                 fontFamily: root.contentFontFamily
                 onClicked: root.moveMonth(1)

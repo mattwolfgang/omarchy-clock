@@ -3,6 +3,7 @@
   "tab.timers": "Temporizadores",
   "tab.alarms": "Alarmes",
   "tab.stopwatch": "Cronômetro",
+  "tab.counted": "%1 %2",
   "field.name": "Nome (opcional)",
   "action.pause": "Pausar",
   "action.resume": "Retomar",
@@ -35,5 +36,18 @@
   "missed.timer": "Temporizador perdido",
   "missed.timer.labeled": "Temporizador perdido: %1",
   "missed.alarm": "Alarme perdido",
-  "missed.alarm.labeled": "Alarme perdido: %1"
+  "missed.alarm.labeled": "Alarme perdido: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Voltar para hoje",
+  "clock.born": "NASCIMENTO",
+  "clock.dayMonthFormat": "d 'de' MMMM",
+  "clock.life": "VIDA",
+  "clock.liveTo": "VIVER ATÉ",
+  "clock.monthYear": "%1 de %2",
+  "clock.nextMonth": "Próximo mês",
+  "clock.previousMonth": "Mês anterior",
+  "clock.startWeeksOn": "Semanas começam em %1",
+  "clock.toggleFormat": "Clique com o botão direito para alternar o formato",
+  "clock.weekShort": "S",
+  "clock.year": "ano"
 }

@@ -3,6 +3,7 @@
   "tab.timers": "Timers",
   "tab.alarms": "Alarm",
   "tab.stopwatch": "Stoppur",
+  "tab.counted": "%1 %2",
   "field.name": "Namn (valfritt)",
   "action.pause": "Pausa",
   "action.resume": "Återuppta",
@@ -35,5 +36,18 @@
   "missed.timer": "Missad timer",
   "missed.timer.labeled": "Missad timer: %1",
   "missed.alarm": "Missat alarm",
-  "missed.alarm.labeled": "Missat alarm: %1"
+  "missed.alarm.labeled": "Missat alarm: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Tillbaka till idag",
+  "clock.born": "FÖDD",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "LIV",
+  "clock.liveTo": "LEV TILL",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Nästa månad",
+  "clock.previousMonth": "Föregående månad",
+  "clock.startWeeksOn": "Börja veckor på %1",
+  "clock.toggleFormat": "Högerklicka för att växla format",
+  "clock.weekShort": "V",
+  "clock.year": "år"
 }

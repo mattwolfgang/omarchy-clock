@@ -3,6 +3,7 @@
   "tab.timers": "Időzítők",
   "tab.alarms": "Ébresztők",
   "tab.stopwatch": "Stopper",
+  "tab.counted": "%1 %2",
   "field.name": "Név (nem kötelező)",
   "action.pause": "Szünet",
   "action.resume": "Folytatás",
@@ -35,5 +36,18 @@
   "missed.timer": "Elmulasztott időzítő",
   "missed.timer.labeled": "Elmulasztott időzítő: %1",
   "missed.alarm": "Elmulasztott ébresztő",
-  "missed.alarm.labeled": "Elmulasztott ébresztő: %1"
+  "missed.alarm.labeled": "Elmulasztott ébresztő: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Vissza mára",
+  "clock.born": "SZÜLETETT",
+  "clock.dayMonthFormat": "MMMM d.",
+  "clock.life": "ÉLET",
+  "clock.liveTo": "ÉLJ EDDIG",
+  "clock.monthYear": "%2. %1",
+  "clock.nextMonth": "Következő hónap",
+  "clock.previousMonth": "Előző hónap",
+  "clock.startWeeksOn": "Hetek kezdete: %1",
+  "clock.toggleFormat": "Jobb kattintás a formátum váltásához",
+  "clock.weekShort": "H",
+  "clock.year": "év"
 }

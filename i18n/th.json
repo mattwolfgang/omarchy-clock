@@ -3,6 +3,7 @@
   "tab.timers": "ตัวจับเวลา",
   "tab.alarms": "นาฬิกาปลุก",
   "tab.stopwatch": "นาฬิกาจับเวลา",
+  "tab.counted": "%1 %2",
   "field.name": "ชื่อ (ไม่บังคับ)",
   "action.pause": "หยุดชั่วคราว",
   "action.resume": "ทำต่อ",
@@ -35,5 +36,18 @@
   "missed.timer": "ตัวจับเวลาที่พลาด",
   "missed.timer.labeled": "ตัวจับเวลาที่พลาด: %1",
   "missed.alarm": "การปลุกที่พลาด",
-  "missed.alarm.labeled": "การปลุกที่พลาด: %1"
+  "missed.alarm.labeled": "การปลุกที่พลาด: %1",
+  "percent": "%1%",
+  "clock.backToToday": "กลับไปวันนี้",
+  "clock.born": "เกิด",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "ชีวิต",
+  "clock.liveTo": "มีชีวิตถึง",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "เดือนถัดไป",
+  "clock.previousMonth": "เดือนก่อน",
+  "clock.startWeeksOn": "เริ่มสัปดาห์วัน %1",
+  "clock.toggleFormat": "คลิกขวาเพื่อสลับรูปแบบ",
+  "clock.weekShort": "สป.",
+  "clock.year": "ปี"
 }

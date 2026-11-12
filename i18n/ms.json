@@ -3,6 +3,7 @@
   "tab.timers": "Pemasa",
   "tab.alarms": "Penggera",
   "tab.stopwatch": "Jam randik",
+  "tab.counted": "%1 %2",
   "field.name": "Nama (pilihan)",
   "action.pause": "Jeda",
   "action.resume": "Sambung",
@@ -35,5 +36,18 @@
   "missed.timer": "Pemasa terlepas",
   "missed.timer.labeled": "Pemasa terlepas: %1",
   "missed.alarm": "Penggera terlepas",
-  "missed.alarm.labeled": "Penggera terlepas: %1"
+  "missed.alarm.labeled": "Penggera terlepas: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Kembali ke hari ini",
+  "clock.born": "LAHIR",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "HIDUP",
+  "clock.liveTo": "HIDUP HINGGA",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Bulan seterusnya",
+  "clock.previousMonth": "Bulan sebelumnya",
+  "clock.startWeeksOn": "Mulakan minggu pada %1",
+  "clock.toggleFormat": "Klik kanan untuk menukar format",
+  "clock.weekShort": "M",
+  "clock.year": "tahun"
 }

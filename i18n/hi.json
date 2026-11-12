@@ -3,6 +3,7 @@
   "tab.timers": "टाइमर",
   "tab.alarms": "अलार्म",
   "tab.stopwatch": "स्टॉपवॉच",
+  "tab.counted": "%1 %2",
   "field.name": "नाम (वैकल्पिक)",
   "action.pause": "रोकें",
   "action.resume": "जारी रखें",
@@ -35,5 +36,18 @@
   "missed.timer": "छूटा हुआ टाइमर",
   "missed.timer.labeled": "छूटा हुआ टाइमर: %1",
   "missed.alarm": "छूटा हुआ अलार्म",
-  "missed.alarm.labeled": "छूटा हुआ अलार्म: %1"
+  "missed.alarm.labeled": "छूटा हुआ अलार्म: %1",
+  "percent": "%1%",
+  "clock.backToToday": "आज पर वापस",
+  "clock.born": "जन्म",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "जीवन",
+  "clock.liveTo": "यहां तक जिएं",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "अगला महीना",
+  "clock.previousMonth": "पिछला महीना",
+  "clock.startWeeksOn": "सप्ताह %1 से शुरू करें",
+  "clock.toggleFormat": "फ़ॉर्मेट बदलने के लिए राइट-क्लिक करें",
+  "clock.weekShort": "स",
+  "clock.year": "वर्ष"
 }

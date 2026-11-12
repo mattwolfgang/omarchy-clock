@@ -3,6 +3,7 @@
   "tab.timers": "Taymerlar",
   "tab.alarms": "Budilniklar",
   "tab.stopwatch": "Sekundomer",
+  "tab.counted": "%1 %2",
   "field.name": "Nomi (ixtiyoriy)",
   "action.pause": "Pauza",
   "action.resume": "Davom etish",
@@ -35,5 +36,18 @@
   "missed.timer": "O‘tkazib yuborilgan taymer",
   "missed.timer.labeled": "O‘tkazib yuborilgan taymer: %1",
   "missed.alarm": "O‘tkazib yuborilgan budilnik",
-  "missed.alarm.labeled": "O‘tkazib yuborilgan budilnik: %1"
+  "missed.alarm.labeled": "O‘tkazib yuborilgan budilnik: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Bugunga qaytish",
+  "clock.born": "TUGʻILGAN",
+  "clock.dayMonthFormat": "d-MMMM",
+  "clock.life": "HAYOT",
+  "clock.liveTo": "YASHASH MUDDATI",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Keyingi oy",
+  "clock.previousMonth": "Oldingi oy",
+  "clock.startWeeksOn": "Haftalar %1 dan boshlansin",
+  "clock.toggleFormat": "Formatni almashtirish uchun oʻng tugmani bosing",
+  "clock.weekShort": "H",
+  "clock.year": "yil"
 }

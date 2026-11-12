@@ -3,6 +3,7 @@
   "tab.timers": "Tímamælar",
   "tab.alarms": "Vekjarar",
   "tab.stopwatch": "Skeiðklukka",
+  "tab.counted": "%1 %2",
   "field.name": "Nafn (valfrjálst)",
   "action.pause": "Hlé",
   "action.resume": "Halda áfram",
@@ -35,5 +36,18 @@
   "missed.timer": "Tímamælir sem missti af",
   "missed.timer.labeled": "Tímamælir sem missti af: %1",
   "missed.alarm": "Vekjari sem missti af",
-  "missed.alarm.labeled": "Vekjari sem missti af: %1"
+  "missed.alarm.labeled": "Vekjari sem missti af: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Til baka í dag",
+  "clock.born": "FÆDDIST",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "LÍF",
+  "clock.liveTo": "LIFA TIL",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Næsti mánuður",
+  "clock.previousMonth": "Fyrri mánuður",
+  "clock.startWeeksOn": "Byrja vikur á %1",
+  "clock.toggleFormat": "Hægrismelltu til að skipta um snið",
+  "clock.weekShort": "V",
+  "clock.year": "ár"
 }

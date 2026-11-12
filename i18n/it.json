@@ -3,6 +3,7 @@
   "tab.timers": "Timer",
   "tab.alarms": "Sveglie",
   "tab.stopwatch": "Cronometro",
+  "tab.counted": "%1 %2",
   "field.name": "Nome (facoltativo)",
   "action.pause": "Pausa",
   "action.resume": "Riprendi",
@@ -35,5 +36,18 @@
   "missed.timer": "Timer perso",
   "missed.timer.labeled": "Timer perso: %1",
   "missed.alarm": "Sveglia persa",
-  "missed.alarm.labeled": "Sveglia persa: %1"
+  "missed.alarm.labeled": "Sveglia persa: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Torna a oggi",
+  "clock.born": "NATO",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "VITA",
+  "clock.liveTo": "VIVI FINO A",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Mese successivo",
+  "clock.previousMonth": "Mese precedente",
+  "clock.startWeeksOn": "Settimana inizia di %1",
+  "clock.toggleFormat": "Clic destro per cambiare formato",
+  "clock.weekShort": "S",
+  "clock.year": "anno"
 }

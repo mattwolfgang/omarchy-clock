@@ -3,6 +3,7 @@
   "tab.timers": "Tidtakere",
   "tab.alarms": "Alarmer",
   "tab.stopwatch": "Stoppeklokke",
+  "tab.counted": "%1 %2",
   "field.name": "Navn (valgfritt)",
   "action.pause": "Pause",
   "action.resume": "Fortsett",
@@ -35,5 +36,18 @@
   "missed.timer": "Tapt tidtaker",
   "missed.timer.labeled": "Tapt tidtaker: %1",
   "missed.alarm": "Tapt alarm",
-  "missed.alarm.labeled": "Tapt alarm: %1"
+  "missed.alarm.labeled": "Tapt alarm: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Tilbake til i dag",
+  "clock.born": "FØDT",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "LIV",
+  "clock.liveTo": "LEV TIL",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Neste måned",
+  "clock.previousMonth": "Forrige måned",
+  "clock.startWeeksOn": "Start uker på %1",
+  "clock.toggleFormat": "Høyreklikk for å bytte format",
+  "clock.weekShort": "U",
+  "clock.year": "år"
 }

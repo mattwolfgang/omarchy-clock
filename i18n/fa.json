@@ -3,6 +3,7 @@
   "tab.timers": "تایمرها",
   "tab.alarms": "هشدارها",
   "tab.stopwatch": "کرنومتر",
+  "tab.counted": "%1 %2",
   "field.name": "نام (اختیاری)",
   "action.pause": "مکث",
   "action.resume": "ادامه",
@@ -35,5 +36,18 @@
   "missed.timer": "تایمر از دست رفته",
   "missed.timer.labeled": "تایمر از دست رفته: %1",
   "missed.alarm": "هشدار از دست رفته",
-  "missed.alarm.labeled": "هشدار از دست رفته: %1"
+  "missed.alarm.labeled": "هشدار از دست رفته: %1",
+  "percent": "%1٪",
+  "clock.backToToday": "بازگشت به امروز",
+  "clock.born": "تولد",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "زندگی",
+  "clock.liveTo": "زندگی تا",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "ماه بعد",
+  "clock.previousMonth": "ماه قبل",
+  "clock.startWeeksOn": "شروع هفته‌ها از %1",
+  "clock.toggleFormat": "برای تغییر قالب راست‌کلیک کنید",
+  "clock.weekShort": "ه",
+  "clock.year": "سال"
 }

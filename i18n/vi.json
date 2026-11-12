@@ -3,6 +3,7 @@
   "tab.timers": "Hẹn giờ",
   "tab.alarms": "Báo thức",
   "tab.stopwatch": "Bấm giờ",
+  "tab.counted": "%1 %2",
   "field.name": "Tên (không bắt buộc)",
   "action.pause": "Tạm dừng",
   "action.resume": "Tiếp tục",
@@ -35,5 +36,18 @@
   "missed.timer": "Hẹn giờ bị lỡ",
   "missed.timer.labeled": "Hẹn giờ bị lỡ: %1",
   "missed.alarm": "Báo thức bị lỡ",
-  "missed.alarm.labeled": "Báo thức bị lỡ: %1"
+  "missed.alarm.labeled": "Báo thức bị lỡ: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Về hôm nay",
+  "clock.born": "SINH",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "ĐỜI",
+  "clock.liveTo": "SỐNG ĐẾN",
+  "clock.monthYear": "%1 năm %2",
+  "clock.nextMonth": "Tháng sau",
+  "clock.previousMonth": "Tháng trước",
+  "clock.startWeeksOn": "Bắt đầu tuần vào %1",
+  "clock.toggleFormat": "Nhấp chuột phải để đổi định dạng",
+  "clock.weekShort": "T",
+  "clock.year": "năm"
 }

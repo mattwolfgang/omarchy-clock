@@ -3,6 +3,7 @@
   "tab.timers": "טיימרים",
   "tab.alarms": "שעונים מעוררים",
   "tab.stopwatch": "סטופר",
+  "tab.counted": "%1 %2",
   "field.name": "שם (אופציונלי)",
   "action.pause": "השהיה",
   "action.resume": "המשך",
@@ -35,5 +36,18 @@
   "missed.timer": "טיימר שהוחמץ",
   "missed.timer.labeled": "טיימר שהוחמץ: %1",
   "missed.alarm": "התראה שהוחמצה",
-  "missed.alarm.labeled": "התראה שהוחמצה: %1"
+  "missed.alarm.labeled": "התראה שהוחמצה: %1",
+  "percent": "%1%",
+  "clock.backToToday": "חזרה להיום",
+  "clock.born": "נולד",
+  "clock.dayMonthFormat": "d בMMMM",
+  "clock.life": "חיים",
+  "clock.liveTo": "לחיות עד",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "החודש הבא",
+  "clock.previousMonth": "החודש הקודם",
+  "clock.startWeeksOn": "תחילת שבוע ביום %1",
+  "clock.toggleFormat": "לחיצה ימנית להחלפת התבנית",
+  "clock.weekShort": "ש׳",
+  "clock.year": "שנה"
 }

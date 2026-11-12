@@ -3,6 +3,7 @@
   "tab.timers": "Таймери",
   "tab.alarms": "Аларми",
   "tab.stopwatch": "Хронометър",
+  "tab.counted": "%1 %2",
   "field.name": "Име (по избор)",
   "action.pause": "Пауза",
   "action.resume": "Продължи",
@@ -35,5 +36,18 @@
   "missed.timer": "Пропуснат таймер",
   "missed.timer.labeled": "Пропуснат таймер: %1",
   "missed.alarm": "Пропусната аларма",
-  "missed.alarm.labeled": "Пропусната аларма: %1"
+  "missed.alarm.labeled": "Пропусната аларма: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Обратно към днес",
+  "clock.born": "РОДЕН",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "ЖИВОТ",
+  "clock.liveTo": "ЖИВЕЙ ДО",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Следващ месец",
+  "clock.previousMonth": "Предишен месец",
+  "clock.startWeeksOn": "Седмиците започват в %1",
+  "clock.toggleFormat": "Щракнете с десния бутон, за да смените формата",
+  "clock.weekShort": "С",
+  "clock.year": "година"
 }

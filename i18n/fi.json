@@ -3,6 +3,7 @@
   "tab.timers": "Ajastimet",
   "tab.alarms": "Hälytykset",
   "tab.stopwatch": "Sekuntikello",
+  "tab.counted": "%1 %2",
   "field.name": "Nimi (valinnainen)",
   "action.pause": "Keskeytä",
   "action.resume": "Jatka",
@@ -35,5 +36,18 @@
   "missed.timer": "Ohitettu ajastin",
   "missed.timer.labeled": "Ohitettu ajastin: %1",
   "missed.alarm": "Ohitettu hälytys",
-  "missed.alarm.labeled": "Ohitettu hälytys: %1"
+  "missed.alarm.labeled": "Ohitettu hälytys: %1",
+  "percent": "%1 %",
+  "clock.backToToday": "Takaisin tähän päivään",
+  "clock.born": "SYNTYNYT",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "ELÄMÄ",
+  "clock.liveTo": "ELINIKÄ",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Seuraava kuukausi",
+  "clock.previousMonth": "Edellinen kuukausi",
+  "clock.startWeeksOn": "Viikon alku: %1",
+  "clock.toggleFormat": "Vaihda muotoa napsauttamalla hiiren oikealla",
+  "clock.weekShort": "Vk",
+  "clock.year": "vuosi"
 }

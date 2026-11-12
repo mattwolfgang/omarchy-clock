@@ -3,6 +3,7 @@
   "tab.timers": "Timers",
   "tab.alarms": "Alarms",
   "tab.stopwatch": "Stopwatch",
+  "tab.counted": "%1 %2",
   "field.name": "Name (optional)",
   "action.pause": "Pause",
   "action.resume": "Resume",
@@ -35,5 +36,18 @@
   "missed.timer": "Missed timer",
   "missed.timer.labeled": "Missed timer: %1",
   "missed.alarm": "Missed alarm",
-  "missed.alarm.labeled": "Missed alarm: %1"
+  "missed.alarm.labeled": "Missed alarm: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Back to today",
+  "clock.born": "BORN",
+  "clock.dayMonthFormat": "MMMM d",
+  "clock.life": "LIFE",
+  "clock.liveTo": "LIVE TO",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Next month",
+  "clock.previousMonth": "Previous month",
+  "clock.startWeeksOn": "Start weeks on %1",
+  "clock.toggleFormat": "Right-click to toggle format",
+  "clock.weekShort": "W",
+  "clock.year": "year"
 }

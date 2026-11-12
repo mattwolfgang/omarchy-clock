@@ -3,6 +3,7 @@
   "tab.timers": "டைமர்கள்",
   "tab.alarms": "அலாரங்கள்",
   "tab.stopwatch": "ஸ்டாப்வாட்ச்",
+  "tab.counted": "%1 %2",
   "field.name": "பெயர் (விருப்பம்)",
   "action.pause": "இடைநிறுத்து",
   "action.resume": "தொடர்க",
@@ -35,5 +36,18 @@
   "missed.timer": "தவறிய டைமர்",
   "missed.timer.labeled": "தவறிய டைமர்: %1",
   "missed.alarm": "தவறிய அலாரம்",
-  "missed.alarm.labeled": "தவறிய அலாரம்: %1"
+  "missed.alarm.labeled": "தவறிய அலாரம்: %1",
+  "percent": "%1%",
+  "clock.backToToday": "இன்றைக்குத் திரும்பு",
+  "clock.born": "பிறந்தது",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "வாழ்க்கை",
+  "clock.liveTo": "வாழும் வரை",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "அடுத்த மாதம்",
+  "clock.previousMonth": "முந்தைய மாதம்",
+  "clock.startWeeksOn": "வாரங்களை %1 இல் தொடங்கு",
+  "clock.toggleFormat": "வடிவத்தை மாற்ற வலது கிளிக் செய்யவும்",
+  "clock.weekShort": "வா",
+  "clock.year": "ஆண்டு"
 }

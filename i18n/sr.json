@@ -3,6 +3,7 @@
   "tab.timers": "Тајмери",
   "tab.alarms": "Аларми",
   "tab.stopwatch": "Штоперица",
+  "tab.counted": "%1 %2",
   "field.name": "Назив (опционо)",
   "action.pause": "Паузирај",
   "action.resume": "Настави",
@@ -35,5 +36,18 @@
   "missed.timer": "Пропуштен тајмер",
   "missed.timer.labeled": "Пропуштен тајмер: %1",
   "missed.alarm": "Пропуштен аларм",
-  "missed.alarm.labeled": "Пропуштен аларм: %1"
+  "missed.alarm.labeled": "Пропуштен аларм: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Назад на данас",
+  "clock.born": "РОЂЕН",
+  "clock.dayMonthFormat": "d. MMMM",
+  "clock.life": "ЖИВОТ",
+  "clock.liveTo": "ЖИВИ ДО",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Следећи месец",
+  "clock.previousMonth": "Претходни месец",
+  "clock.startWeeksOn": "Недеље почињу %1",
+  "clock.toggleFormat": "Кликните десним тастером да промените формат",
+  "clock.weekShort": "Н",
+  "clock.year": "година"
 }

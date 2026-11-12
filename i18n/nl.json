@@ -3,6 +3,7 @@
   "tab.timers": "Timers",
   "tab.alarms": "Wekkers",
   "tab.stopwatch": "Stopwatch",
+  "tab.counted": "%1 %2",
   "field.name": "Naam (optioneel)",
   "action.pause": "Pauzeren",
   "action.resume": "Hervatten",
@@ -35,5 +36,18 @@
   "missed.timer": "Gemiste timer",
   "missed.timer.labeled": "Gemiste timer: %1",
   "missed.alarm": "Gemiste wekker",
-  "missed.alarm.labeled": "Gemiste wekker: %1"
+  "missed.alarm.labeled": "Gemiste wekker: %1",
+  "percent": "%1%",
+  "clock.backToToday": "Terug naar vandaag",
+  "clock.born": "GEBOREN",
+  "clock.dayMonthFormat": "d MMMM",
+  "clock.life": "LEVEN",
+  "clock.liveTo": "LEEF TOT",
+  "clock.monthYear": "%1 %2",
+  "clock.nextMonth": "Volgende maand",
+  "clock.previousMonth": "Vorige maand",
+  "clock.startWeeksOn": "Weken beginnen op %1",
+  "clock.toggleFormat": "Klik met rechts om het formaat te wisselen",
+  "clock.weekShort": "W",
+  "clock.year": "jaar"
 }
