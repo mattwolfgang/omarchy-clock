@@ -465,6 +465,7 @@ Panel {
 
         TimersView {
           id: timersView
+          live: root.opened
           anchors.fill: parent
           visible: root.activeTab === "timers"
           service: root.service
@@ -477,6 +478,7 @@ Panel {
 
         AlarmsView {
           id: alarmsView
+          live: root.opened
           anchors.fill: parent
           visible: root.activeTab === "alarms"
           service: root.service
@@ -621,8 +623,9 @@ Panel {
                   font.letterSpacing: 1
                 }
 
-                TextField {
+                BoundedField {
                   id: bornField
+                  live: root.opened
                   width: Style.space(70)
                   anchors.verticalCenter: parent.verticalCenter
                   placeholderText: clockStrings.t("clock.year")
@@ -645,8 +648,9 @@ Panel {
                   font.letterSpacing: 1
                 }
 
-                TextField {
+                BoundedField {
                   id: expectancyField
+                  live: root.opened
                   width: Style.space(60)
                   anchors.verticalCenter: parent.verticalCenter
                   placeholderText: "90"

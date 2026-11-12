@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "io.github.mattwolfgang.clock",
   "name": "Clock Plus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Matt Wolfgang",
   "description": "This fork of the Omarchy Clock plugin adds timers, alarms, and a stopwatch to the calendar popup, with a live countdown in the bar. It is intended as a complete replacement for the built-in clock: enabling it takes the built-in's place in the bar and keeps your clock settings. Timers and alarms survive shell restarts, and a single service keeps them in sync across monitors.",
   "kinds": [

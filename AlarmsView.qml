@@ -10,6 +10,8 @@ Item {
   id: view
 
   property var service: null
+  // False while the popup is closed; keeps the fields read-only.
+  property bool live: true
   Commons.Translations { id: strings; directory: Qt.resolvedUrl("i18n") }
   property var labelLocale: Qt.locale(Commons.I18n.formatLocale)
   property var weekdays: [1, 2, 3, 4, 5, 6, 0]
@@ -81,8 +83,9 @@ Item {
       width: parent.width
       spacing: Style.space(8)
 
-      TextField {
+      BoundedField {
         id: timeField
+        live: view.live
         width: Style.space(110)
         anchors.verticalCenter: parent.verticalCenter
         placeholderText: Time.localizeNumber(view.use12h ? "7:30 am" : "07:30", Commons.I18n.zeroDigit, ":")
@@ -93,8 +96,9 @@ Item {
         Keys.onPressed: function(event) { view.fieldKey(event) }
       }
 
-      TextField {
+      BoundedField {
         id: labelField
+        live: view.live
         width: parent.width - timeField.width - addButton.width - parent.spacing * 2
         anchors.verticalCenter: parent.verticalCenter
         placeholderText: strings.t("field.name")

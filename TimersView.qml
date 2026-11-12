@@ -10,6 +10,8 @@ Item {
   id: view
 
   property var service: null
+  // False while the popup is closed; keeps the fields read-only.
+  property bool live: true
   Commons.Translations { id: strings; directory: Qt.resolvedUrl("i18n") }
   property double now: 0
   property color foreground: Commons.Color.foreground
@@ -56,8 +58,9 @@ Item {
       width: parent.width
       spacing: Style.space(8)
 
-      TextField {
+      BoundedField {
         id: durationField
+        live: view.live
         width: Style.space(110)
         anchors.verticalCenter: parent.verticalCenter
         // Accepted forms rather than prose: the parser reads these in every language.
@@ -69,8 +72,9 @@ Item {
         Keys.onPressed: function(event) { view.fieldKey(event) }
       }
 
-      TextField {
+      BoundedField {
         id: labelField
+        live: view.live
         width: parent.width - durationField.width - startButton.width - parent.spacing * 2
         anchors.verticalCenter: parent.verticalCenter
         placeholderText: strings.t("field.name")

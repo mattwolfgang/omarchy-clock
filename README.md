@@ -10,6 +10,7 @@ Forked from `shell/plugins/panels/clock` in [Omarchy](https://github.com/omacom/
 
 - The Omarchy shell (developed against 4.5.0rc2-1)
 - `paplay` for the alarm sound. Without it, notifications still appear but there is no sound.
+- `wl-paste` (wl-clipboard, included with Omarchy) for pasting into the popup's fields. The fields never let Qt read the clipboard itself, since it reads the whole offer with no size or time limit; a paste reads at most 1 KiB within 2 seconds instead.
 
 ## Install
 
