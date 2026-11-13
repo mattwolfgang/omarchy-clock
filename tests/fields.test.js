@@ -23,13 +23,20 @@ test("every BoundedField is told when its popup is open", () => {
   }
 })
 
-test("BoundedField stays read-only unless focused, visible and live, and caps paste", () => {
+test("BoundedField is a TextEdit that takes over every clipboard read", () => {
   const source = read("BoundedField.qml")
-  assert.match(source, /readonly property bool usable: live && visible && enabled/)
-  assert.match(source, /readOnly: !\(usable && activeFocus\)/)
-  assert.match(source, /Controls\.ContextMenu\.menu: null/)
+  // TextEdit decides whether Paste is available from the offered formats;
+  // TextInput (under TextField) fetches the offer to decide.
+  assert.match(source, /^\s*TextEdit\s*\{/m)
+  assert.doesNotMatch(source, /^\s*(Ui\.|Controls\.)?(TextField|TextInput|TextArea)\s*\{/m)
+  // Its two fetch paths: the Paste key sequence and middle-click.
+  assert.match(source, /event\.matches\(StandardKey\.Paste\)/)
+  assert.match(source, /Keys\.priority: Keys\.BeforeItem/)
+  assert.match(source, /acceptedButtons: Qt\.MiddleButton/)
+  assert.doesNotMatch(source, /\.paste\(/)
+  // The bounded helper.
   assert.match(source, /"timeout", "-k", "1", "2", "bash", "-c"/)
-  assert.match(source, /head -c " \+ \(pasteLimit \+ 1\)/)
   assert.match(source, /set -o pipefail/)
+  assert.match(source, /head -c " \+ \(pasteLimit \+ 1\)/)
   assert.match(source, /pasteExit === 0 \? pasteOutput : ""/)
 })
